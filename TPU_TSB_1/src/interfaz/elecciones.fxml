@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="563.0" prefWidth="804.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.PrincipalController">
+   <children>
+      <Button fx:id="btnCambiar" layoutX="550.0" layoutY="19.0" mnemonicParsing="false" onAction="#cambiarUbicacion" text="Cambiar..." />
+      <Label fx:id="labelUbicacion" layoutX="155.0" layoutY="23.0" prefHeight="18.0" prefWidth="347.0" text="C:\Users\Ignacio Mendez\Desktop\ArchivosPASO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelOrigen" layoutX="20.0" layoutY="24.0" text="Origen de datos:" />
+      <Button fx:id="btnCargarDatos" layoutX="18.0" layoutY="57.0" mnemonicParsing="false" onAction="#cargarDatos" text="Cargar datos..." />
+      <ListView fx:id="lvwResultados" layoutX="20.0" layoutY="319.0" prefHeight="223.0" prefWidth="763.0" />
+      <Label fx:id="labelResultados" layoutX="20.0" layoutY="291.0" text="Resultados:" />
+      <Label layoutX="18.0" layoutY="134.0" text="Distrito:" />
+      <ComboBox fx:id="cboDistritos" layoutX="75.0" layoutY="129.0" onAction="#elegirDistrito" prefHeight="26.0" prefWidth="291.0" />
+      <Line endX="680.4000244140625" layoutX="110.0" layoutY="107.0" startX="-100.0" />
+      <Label layoutX="18.0" layoutY="177.0" text="Sección:" />
+      <ComboBox fx:id="cboSecciones" layoutX="75.0" layoutY="173.0" onAction="#elegirSeccion" prefHeight="26.0" prefWidth="291.0" />
+      <Label layoutX="18.0" layoutY="221.0" text="Circuito:" />
+      <ComboBox fx:id="cboCircuitos" layoutX="75.0" layoutY="217.0" onAction="#elegirCircuito" prefHeight="26.0" prefWidth="291.0" />
+      <Line endX="677.4000244140625" layoutX="115.0" layoutY="269.0" startX="-100.0" />
+   </children>
+</AnchorPane>
